@@ -19,15 +19,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common RR stuff
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Inherit from ef71 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := SKY
 PRODUCT_DEVICE := ef71
-PRODUCT_NAME := lineage_ef71
+PRODUCT_NAME := rr_ef71
 PRODUCT_MODEL := IM-100
 PRODUCT_MANUFACTURER := Pantech
 
